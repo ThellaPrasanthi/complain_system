@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:5000";
+const API_BASE = "https://complain-system-1-59uf.onrender.com";
 const API = API_BASE + "/api/complaints";
 
 /* =========================
@@ -224,3 +224,4 @@ function doLogin() {
         window.location.href = role === "admin" ? "admin.html" : "user.html";
     });
 }
+
