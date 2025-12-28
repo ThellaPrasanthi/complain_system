@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>User Complaint Portal</h2>
+
+    <!-- Complaint Form -->
+    <div class="card">
+        <h3>Submit a Complaint</h3>
+
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email Address">
+        <input type="text" id="phone" placeholder="Phone Number">
+        <input type="text" id="category" placeholder="Category (e.g., IT, HR)">
+        <input type="text" id="title" placeholder="Complaint Title">
+        <textarea id="description" placeholder="Describe your issue"></textarea>
+
+        <button class="primary-btn" onclick="submitComplaint()">
+            Submit Complaint
+        </button>
+    </div>
+
+    <!-- My Complaints -->
+    <div class="card">
+        <h3>My Complaints</h3>
+        <div id="complaintList"></div>
+    </div>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+</div>
+
+
+<script src="script.js">
+  protectPage("user");
+</script>
+
+</body>
+</html>
